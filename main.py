@@ -17,9 +17,9 @@ import re
 from requests import *
 
 teletips = Client("MediaToTelegraphLink",
-    api_id="ضع ايبي ايدي",
-    api_hash="ضع ايبي هاش",
-    bot_token="ضع توكن بوتك")
+    api_id="12421436",
+    api_hash="fbe8061f1148eabbacdf9e0713e8b74a",
+    bot_token="6756475615:AAG6we5pUDU0iXxeSr3jLtQ-0GGaVlCxBYA")
 ''
 
 @teletips.on_message(filters.command('start') & filters.private)
@@ -31,7 +31,7 @@ async def start(client, message):
 👨🏼‍💻ما عليك سوى إرسال ملف وسائط صالح مباشرة إلى هذه الدردشة.
 ♻️انواع الملفات الصالحه هي:- 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
 
-🌐لأنشاء الروابط في المجموعات,اضفني لمجموعه خارقه اي عامه وارسل الامر <code>/tl</code> ردا علي ملف وسائط صالح.
+🌐لأنشاء الروابط في المجموعات,اضفني لمجموعه خارقه اي عامه وارسل الامر <code>ميديا</code> ردا علي ملف وسائط صالح.
 🖥 | [شاشه سوداء .🖤](https://t.me/zrrrrrrrrrz)
 
 ☣️ | [تـــــــــــــــــــــــــــارك）⛧](https://t.me/l_b10)
@@ -59,7 +59,7 @@ async def get_link_private(client, message):
     except Exception:
         pass        
 
-@teletips.on_message(filters.command('tl'))
+@teletips.on_message(filters.command('ميديا'))
 async def get_link_group(client, message):
     try:
         text = await message.reply("🔮انتظر قليلا...")
